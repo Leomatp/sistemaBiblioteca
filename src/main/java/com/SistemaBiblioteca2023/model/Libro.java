@@ -35,8 +35,18 @@ public class Libro {
 	@ManyToOne
 	@JoinColumn(name = "id_editorial")
 	private Editorial editorial;
-
 	
+		/* Julio */
+	@ManyToOne
+	@JoinColumn(name="id_localizacion")
+	private Localizacion localizacion;	
+		/* Julio */
+	
+	/* Julio */
+	@ManyToOne
+	@JoinColumn(name="id_Categoria")
+	private Categoria categoria;	
+		/* Julio */
 
 	public Integer getIdLibro() {
 		return idLibro;
@@ -93,6 +103,24 @@ public class Libro {
 	public void setEditorial(Editorial editorial) {
 		this.editorial = editorial;
 	}
+	 ///------
+
+	public Localizacion getLocalizacion() {
+		return localizacion;
+	}
+
+	public void setLocalizacion(Localizacion localizacion) {
+		this.localizacion = localizacion;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+	///------
 	
 	
 	
