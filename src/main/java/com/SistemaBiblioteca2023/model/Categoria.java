@@ -19,7 +19,40 @@ public class Categoria {
 	@Column(name="nombre_categoria")
 	private String nombreCategoria;
 	
+	
 	@OneToMany(mappedBy = "categoria")
 	private List<Libro> listaLibros;
+
+
+	public Integer getIdCategoria() {
+		return idCategoria;
+	}
+
+
+	public void setIdCategoria(Integer idCategoria) {
+		this.idCategoria = idCategoria;
+	}
+
+
+	public String getNombreCategoria() {
+		return nombreCategoria;
+	}
+
+
+	public void setNombreCategoria(String nombreCategoria) {
+		this.nombreCategoria = nombreCategoria;
+	}
+
+
+	public List<Libro> getListaLibros() {
+		return listaLibros;
+	}
+
+
+	public void setListaLibros(List<Libro> listaLibros) {
+		this.listaLibros = listaLibros;
+	}
+	
+	
 
 }

@@ -17,7 +17,7 @@ public class Localizacion {
 	private Integer idLocalizacion;
 	
 	@Column(name="estante")
-	private String estande;
+	private String estante;
 	
 	@Column(name="seccion")
 	private String seccion;
@@ -37,12 +37,12 @@ public class Localizacion {
 		this.idLocalizacion = idLocalizacion;
 	}
 
-	public String getEstande() {
-		return estande;
+	public String getEstante() {
+		return estante;
 	}
 
-	public void setEstande(String estande) {
-		this.estande = estande;
+	public void setEstante(String estante) {
+		this.estante = estante;
 	}
 
 	public String getSeccion() {

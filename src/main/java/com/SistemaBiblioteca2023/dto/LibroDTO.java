@@ -10,6 +10,10 @@ public class LibroDTO {
 	private int cantidad;
 	private Collection<AutorDTO> autoresDTO;
 	private Collection<EditorialDTO> editorialesDTO;
+	//
+	private Collection<CategoriaDTO> categoriasDTO;
+	//
+	private Collection<LocalizacionDTO> localizacionesDTO;
 	
 	public Integer getIdLibro() {
 		return idLibro;
@@ -52,6 +56,18 @@ public class LibroDTO {
 	}
 	public void setEditorialesDTO(Collection<EditorialDTO> editorialesDTO) {
 		this.editorialesDTO = editorialesDTO;
+	}
+	public Collection<CategoriaDTO> getCategoriasDTO() {
+		return categoriasDTO;
+	}
+	public void setCategoriasDTO(Collection<CategoriaDTO> categoriasDTO) {
+		this.categoriasDTO = categoriasDTO;
+	}
+	public Collection<LocalizacionDTO> getLocalizacionesDTO() {
+		return localizacionesDTO;
+	}
+	public void setLocalizacionesDTO(Collection<LocalizacionDTO> localizacionesDTO) {
+		this.localizacionesDTO = localizacionesDTO;
 	}
 	
 	
